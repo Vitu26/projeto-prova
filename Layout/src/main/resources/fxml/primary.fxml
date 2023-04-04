@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projeto.Layout.FXMLController">
+    <children>
+        <Label fx:id="lblOut" layoutX="115.0" layoutY="3.0" minHeight="16" minWidth="69" prefHeight="35.0" prefWidth="97.0" text="Calcula Média">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Button fx:id="btnCalcular" layoutX="22.0" layoutY="385.0" mnemonicParsing="false" onAction="#clickBtnCalcular" text="Clacular" />
+      <VBox layoutX="18.0" layoutY="38.0" prefHeight="116.0" prefWidth="298.0" spacing="15.0">
+         <children>
+            <TextField fx:id="tfNome" promptText="Nome" />
+            <TextField fx:id="tfNota1" promptText="Nota 1" />
+            <TextField fx:id="tfNota2" promptText="Nota 2" />
+         </children>
+      </VBox>
+      <HBox layoutX="16.0" layoutY="184.0" prefHeight="35.0" prefWidth="298.0" spacing="25.0">
+         <children>
+            <RadioButton fx:id="rdMasculino" mnemonicParsing="false" text="Masculino" />
+            <RadioButton fx:id="rdFeminino" mnemonicParsing="false" text="Feminino" />
+         </children>
+      </HBox>
+      <Label layoutX="18.0" layoutY="157.0" text="Escolha o sexo:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <VBox layoutX="22.0" layoutY="255.0" prefHeight="91.0" prefWidth="263.0" spacing="15.0">
+         <children>
+            <CheckBox fx:id="cdDisciplina1" mnemonicParsing="false" text="Técnicas de Programação" />
+            <CheckBox fx:id="cdDisciplina2" mnemonicParsing="false" text="Banco de dados" />
+            <CheckBox fx:id="cdDisciplina3" mnemonicParsing="false" text="Análise e desenvolvimento de sistemas" />
+         </children>
+      </VBox>
+      <Label layoutX="22.0" layoutY="219.0" text="Selecione uma disciplina:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
